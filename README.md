@@ -32,7 +32,7 @@ Each package should have:
 
 package_name/
 files/          - Files to install in /bin or /system
-config/         - Optional configuration files for /etc/[package]/
+configs/         - Optional configuration files for /etc/[package]/
 meta.txt        - Metadata or description for the package
 
 ```
@@ -47,13 +47,13 @@ Suppose you have a package called `unzip`:
 
 /PKGServer/packages/unzip/
 files/unzip.lua
-config/unzip.conf
+configs/unzip.conf
 meta.txt
 
 ```
 
 - `files/unzip.lua` → will be copied to `/bin/unzip.lua` on the client  
-- `config/unzip.conf` → will be copied to `/etc/unzip/unzip.conf`  
+- `configs/unzip.conf` → will be copied to `/etc/unzip/unzip.conf`  
 - `meta.txt` → contains description: `Unzip utility for AzrovaOS`  
 
 Client command to install:
